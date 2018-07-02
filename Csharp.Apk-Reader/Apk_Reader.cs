@@ -92,6 +92,7 @@ namespace Csharp.Apk_Reader
         public String sdkVersion { get; }
         public String targetSdkVersion { get; }
         public String versionCode { get; }
+        public String nativeCode { get; }
 
         public ApkInfo(String Mainifest)
         {
@@ -102,6 +103,8 @@ namespace Csharp.Apk_Reader
             sdkVersion = getAttribution(@"sdkVersion:'(.*?)'");
             targetSdkVersion = getAttribution(@"targetSdkVersion:'(.*?)'");
             versionCode = getAttribution(@"versionCode='(.*?)'");
+            nativeCode = getAttribution(@"native-code: '(.*?)'");
+
         }
 
         public String ToString()
@@ -112,12 +115,13 @@ namespace Csharp.Apk_Reader
             result += " | sdkVersion: "+ sdkVersion;
             result += " | targetSdkVersion: "+ targetSdkVersion;
             result += " | versionCode: "+ versionCode;
+            result += " | nativeCode: " + nativeCode;
             return result;
         }
 
         private String getAttribution(String regex)
         {
-            Regex reg = new Regex(regex);
+            Regex reg = new Regex(regex, RegexOptions.IgnoreCase);
             Match m = reg.Match(allManifest);
             if (m.Success)
             {

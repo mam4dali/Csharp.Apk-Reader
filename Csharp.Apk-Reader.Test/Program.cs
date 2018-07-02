@@ -27,6 +27,7 @@ namespace Csharp.Apk_Reader.Test
             Console.WriteLine("sdkVersion: " + file_info.sdkVersion);
             Console.WriteLine("targetSdkVersion: " + file_info.targetSdkVersion);
             Console.WriteLine("versionCode: " + file_info.versionCode);
+            Console.WriteLine("nativeCode: " + file_info.nativeCode);
 
             Console.ReadKey();
         }
