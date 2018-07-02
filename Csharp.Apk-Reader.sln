@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csharp.Apk-Reader", "Csharp.Apk-Reader\Csharp.Apk-Reader.csproj", "{7C5973BD-E150-487B-9966-014E90DCD87F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csharp.Apk-Reader.Test", "Csharp.Apk-Reader.Test\Csharp.Apk-Reader.Test.csproj", "{77C09145-5057-495D-8C25-BD4B6BF1FEDA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7C5973BD-E150-487B-9966-014E90DCD87F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C5973BD-E150-487B-9966-014E90DCD87F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C5973BD-E150-487B-9966-014E90DCD87F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77C09145-5057-495D-8C25-BD4B6BF1FEDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77C09145-5057-495D-8C25-BD4B6BF1FEDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77C09145-5057-495D-8C25-BD4B6BF1FEDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77C09145-5057-495D-8C25-BD4B6BF1FEDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
